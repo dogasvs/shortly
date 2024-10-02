@@ -10,7 +10,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #EFF1F7;
-  margin-inline: 165px;
 }
 
 img, picture, video, canvas, svg {
@@ -32,6 +31,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin-inline: 165px;
 }
 
 .content {
@@ -193,6 +196,33 @@ a {
 
 .getStart {
   background-image: url('/blackgradyan.png');
+  background-repeat: no-repeat;
+}
+
+.linkPromotion {
+  background-image: url('/blackgradyan.png');
+  background-repeat: no-repeat;
+  padding: 52px 64px;
+  text-align: center;
+  background-color: #4b3e6a;
+
+  h1 {
+    color: #Fff;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+  }
+
+  button  {
+    background-color: #2BD0D0;
+    padding: 14px 40px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 40px;
+  }
 }
 
 .cizgi {
