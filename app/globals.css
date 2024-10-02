@@ -231,3 +231,36 @@ a {
   bottom: 250px;
   z-index: -1;
 }
+
+.footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 165px;
+  align-items: baseline;
+  padding-block: 72px
+}
+
+.footerLinks {
+  display: flex;
+  gap: 80px;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  strong {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+  }
+}
+
+.socialMedia {
+  display: flex;
+  gap: 30px;
+}

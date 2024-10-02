@@ -5,6 +5,7 @@ import Subheader from "./components/subheader/page";
 import Form from "./components/form/page";
 import Statistics from "./components/statistics/page";
 import LinkPromotion from "./components/linkPromotion/page";
+import Footer from "./components/footer/page.";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
             <Statistics />
         </div>
             <LinkPromotion />
+            <Footer />
         {children}
       </body>
     </html>
