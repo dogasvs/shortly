@@ -1,0 +1,203 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #EFF1F7;
+  margin-inline: 165px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(100% + 330px);
+  margin-left: -165px; 
+  padding-inline: 165px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.headerSelectedPart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.loginBtn {
+  color: #9E9AA8;
+  border: none;
+  background-color: #FFF;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.signBtn {
+  margin-left: 30px;
+  padding: 9px 23px;
+  background-color: #2BD0D0;
+  font-size: 15px;
+  line-height: 23px;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+.signBtn:hover {
+  background-color: #9AE3E3;
+}
+
+.subheader {
+  width: 563px;
+  margin-bottom: 140px;
+
+  h1 {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: #34313D;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 36px;
+    color: #9E9AA8;
+    letter-spacing: 0.15px;
+    margin-bottom: 38px;
+  }
+
+  button  {
+    background-color: #2BD0D0;
+    padding: 14px 40px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 40px;
+  }
+
+  button:hover {
+    background-color: #9AE3E3;
+  }
+  
+}
+
+.form {
+  background-image: url('/blackgradyan.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  position: relative;
+  bottom: 65px;
+  border-radius: 10px;
+  margin-bottom: 120px;
+
+  form {
+    padding: 52px 64px;
+  }
+
+  input {
+    width: 769px;
+    padding: 15px 32px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 32px;
+  }
+
+  button {
+    padding: 12px 40px;
+    background-color: #2BD0D0;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  button:hover {
+    background-color: #9AE3E3;
+  } 
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 170px;
+}
+ 
+.titleP {
+  margin-bottom: 56px;
+}
+
+.statisticksItems {
+  display: flex;
+  gap: 30px;
+}
+
+.statistics .statisticksItems .ıtem:nth-child(2) {
+  position: relative;
+  top: 44px;
+}
+
+.statistics .statisticksItems .ıtem:nth-child(3) {
+  position: relative;
+  top: 88px;
+}
+
+.ıtem {
+  width: 350px;
+  background-color: #FFFFFF;
+  padding: 40px 32px 41px 32px;
+  border-radius: 8px;  
+}
+
+.getStart {
+  background-image: url('/blackgradyan.png');
+}
+
+.cizgi {
+  position: relative;
+  left: 15px;
+  bottom: 250px;
+  z-index: -1;
+}
