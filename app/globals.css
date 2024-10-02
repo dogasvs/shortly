@@ -44,6 +44,9 @@ a {
   width: calc(100% + 330px);
   margin-left: -165px; 
   padding-inline: 165px;
+  background-image: url('/workingman.png');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .header {
