@@ -137,7 +137,6 @@ a {
   position: relative;
   bottom: 65px;
   border-radius: 10px;
-  margin-bottom: 120px;
 
   form {
     padding: 52px 64px;
@@ -166,6 +165,37 @@ a {
   button:hover {
     background-color: #9AE3E3;
   } 
+}
+
+.shortUrls {
+  margin-bottom: 120px;
+  background-color: #FFFFFF;
+  padding: 18px 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .shortInfo {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+    .btn {
+      padding: 7px 30px;
+      background-color: #2BD0D0;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #9AE3E3;
+    } 
+  }
 }
 
 .statistics {
@@ -274,5 +304,6 @@ a {
 
 .socialMedia {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
