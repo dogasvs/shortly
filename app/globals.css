@@ -52,7 +52,9 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
+  background-color: #fff;
+  padding: 30px 165px;
+  align-items: center;
 }
 
 .headerSelectedPart {
