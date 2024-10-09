@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="headerSelectedPart">
-      <h1>Shortly</h1>
+      <Link href={"/"}> <h1>Shortly</h1> </Link> 
       <Navbar />
       </div>
       <div className="headerBtns">
