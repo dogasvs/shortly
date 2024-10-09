@@ -310,7 +310,7 @@ a {
   gap: 30px;
 }
 
-.loginForm {
+.loginForm, .signUpForm {
   margin: 0 auto;
   width: 500px;
   display: flex;
@@ -319,7 +319,7 @@ a {
   padding: 60px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-block: 40px;
+  margin-block: 25px;
 
   label {
     margin-bottom: 12px;
