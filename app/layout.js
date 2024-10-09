@@ -1,11 +1,11 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/header/page";
-import Subheader from "./components/subheader/page";
-import Form from "./components/form/page";
-import Statistics from "./components/statistics/page";
-import LinkPromotion from "./components/linkPromotion/page";
-import Footer from "./components/footer/page.";
+import Header from "@/components/header/page";
+import Subheader from "@/components/subheader/page";
+import Form from "@/components/form/page";
+import Statistics from "@/components/statistics/page";
+import LinkPromotion from "@/components/linkPromotion/page";
+import Footer from "@/components/footer/page.";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,16 +27,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className="container">
-        <div className="content">
             <Header />
-            <Subheader />
-          </div>
-            <Form />
-            <Statistics />
-        </div>
-            <LinkPromotion />
-            <Footer />
+       
         {children}
       </body>
     </html>

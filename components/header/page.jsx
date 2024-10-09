@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../navbar/page";
 
 export default function Header() {
@@ -8,8 +9,8 @@ export default function Header() {
       <Navbar />
       </div>
       <div className="headerBtns">
-        <button className="loginBtn">Login</button>
-        <button className="signBtn">Sign in</button>
+        <Link className="loginBtn" href={"/login"}>Login</Link>
+        <Link className="signBtn" href={"/signUp"}>Sign in</Link>
       </div> 
     </div>
   )
