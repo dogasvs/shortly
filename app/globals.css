@@ -309,3 +309,48 @@ a {
   align-items: center;
   gap: 30px;
 }
+
+.loginForm {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-block: 40px;
+
+  label {
+    margin-bottom: 12px;
+    color: #333333;
+  }
+
+  input {
+    padding: 10px 16px;
+    border-color: transparent;
+    border-radius: 7px;
+    margin-bottom: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+
+  input::placeholder {
+    color: #BFBFBF;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: #2BD0D0;
+    border: transparent;
+    padding-block: 11px;
+    color: #FFF;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #39eeee;
+  }
+}
