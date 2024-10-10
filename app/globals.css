@@ -271,7 +271,7 @@ a {
 
 .cizgi {
   position: relative;
-  left: 15px;
+  left: 7px;
   bottom: 250px;
   z-index: -1;
 }
@@ -308,6 +308,15 @@ a {
   display: flex;
   align-items: center;
   gap: 30px;
+
+  svg {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  svg:hover {
+    opacity: 0.5;
+  }
 }
 
 .loginForm, .signUpForm {
@@ -354,3 +363,26 @@ a {
     background-color: #39eeee;
   }
 }
+
+.userBtns {
+  display: flex;
+  gap: 20px;
+}
+
+.logOut {
+  margin-left: 30px;
+  padding: 9px 23px;
+  background-color: #2BD0D0;
+  font-size: 15px;
+  line-height: 23px;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logOut:hover {
+  background-color: #39eeee;
+}
+
