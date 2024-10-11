@@ -27,7 +27,7 @@ export async function signUp(formData) {
           ...defaultUserMetaData,
           bio: "hello world",
           firstName: formData.get("firstname"),
-          firstName: formData.get("lastname")
+          lastName: formData.get("lastname")
         }
       }
     }
