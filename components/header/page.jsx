@@ -17,7 +17,7 @@ export default async function Header() {
 
         { user ? (
            <div className="userBtns">
-            <p>{user.user_metadata.firstName} {user.user_metadata.lastname}</p>
+            <p>{user.user_metadata.firstname} {user.user_metadata.lastname}</p>
             <form action={signOut}>
               <button className="logOut">Log out</button>
             </form>
