@@ -1,10 +1,11 @@
 "use client";
 import { linkToShortAction } from "@/actions/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useFormState } from "react-dom";
 import { toast } from "sonner";
 
-export default function Form() {
+export default function Form({user}) {
+  const [userId, setUserId] = useState(user? user.id : null);
 
   const [state, action] = useFormState(linkToShortAction, {
     message: null,
@@ -31,6 +32,7 @@ export default function Form() {
           placeholder="Shorten a link here..." 
           required
         />
+        <input type="hidden" name="userId" value={userId} />
         <button type="submit">Shorten It!</button>
       </form>
     </div>
