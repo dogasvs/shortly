@@ -2,6 +2,7 @@
 
 import { defaultHeader } from "@/utils/header";
 import { makeid } from "@/utils/link";
+import { revalidatePath } from "next/cache";
 
 export async function linkToShortAction(prevState, formData){
     const longUrl = formData.get("long_url");
@@ -15,12 +16,15 @@ export async function linkToShortAction(prevState, formData){
         headers: defaultHeader,
         body: JSON.stringify({
             short_url: shortUrl,
-            long_url: longUrl
+            long_url: longUrl,
+            user_id: formData.get("userId")
         })
     })
 
+    console.log(shortUrl);
+
     if(response.ok){
-        return { message: "Link başarıyla kısaltıldı" }
+        revalidatePath('/', 'layout')
     } else {
         console.log("başarısız");
     }
