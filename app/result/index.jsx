@@ -18,7 +18,7 @@ export default async function ShortUrlDisplay() {
     <div className="shortUrls">
     {data?.map((x, i) => (
         <div className='shortUrlItem' key={i}>
-          <Link href={x.long_url}>http://localhost:3001/{x.short_url}</Link> 
+          <Link href={x.long_url}>https://shortly-g87wl1sq5-dogas-projects-b8ea1bfd.vercel.app/{x.short_url}</Link> 
           <CopiedBtn longUrl={x.long_url} />
         </div>
      ))  
