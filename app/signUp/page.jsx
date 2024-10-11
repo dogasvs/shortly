@@ -3,7 +3,7 @@ import { signUp } from "@/actions/auth";
 export default function SignUpPage() {
   return (
     <form className="signUpForm" action={signUp}>
-        <label htmlFor="firstname">Firstname</label>
+      <label htmlFor="firstname">Firstname</label>
       <input type="text" name="firstname" placeholder="Firstname" /> <br />
       <label htmlFor="lastname">Lastname</label>
       <input type="text" name="lastname" placeholder="Lastname" />  <br />

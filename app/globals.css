@@ -174,9 +174,6 @@ a {
   background-color: #FFFFFF;
   padding: 18px 32px;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   .shortInfo {
     display: flex;
@@ -386,3 +383,16 @@ a {
   background-color: #39eeee;
 }
 
+.shortUrlItem {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+
+  button {
+    border: transparent;
+    padding: 7px 20px;
+    border-radius: 50px;
+    background-color: #39eeee;
+    color: #fff;
+  }
+}
